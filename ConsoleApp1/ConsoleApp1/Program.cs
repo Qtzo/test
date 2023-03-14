@@ -10,7 +10,7 @@ namespace HelloWorld
         {
             public string solution(string S, string T)
             {
-                if (S.Length >= 100 || T.Length >= 100) return "ERROR";
+                if (S.Length > 100 || T.Length > 100   || T.Length < 1   || S.Length < 1) return "ERROR";
                 if (S == T) return "EQUAL";
                 if (Math.abs(S.Length - T.Length) > 1) return "IMPOSSIBLE";
                 if (S.Length > T.Length)
