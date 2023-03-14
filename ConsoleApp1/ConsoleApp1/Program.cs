@@ -12,6 +12,7 @@ namespace HelloWorld
             {
                 if (S.Length >= 100 || T.Length >= 100) return "ERROR";
                 if (S == T) return "EQUAL";
+                if (Math.abs(S.Length - T.Length) > 1) return "IMPOSSIBLE";
                 if (S.Length > T.Length)
                 {
                     for (int j = 0; j < T.Length; j++)
